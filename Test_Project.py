@@ -117,7 +117,7 @@ print(predicted_confidence_score)
 
 B. INFORMATION RETRIEVAL (DOCUMENT RELEVANCE)
 
-1. Extracting relevant fields from JSON file on datasets (name, metadata description and list of mentions)¶
+1. Extracting relevant fields from JSON file on datasets (name, metadata description and list of mentions)Â¶
 
 # Import data_sets.json file and extracting 'title', 'description' and 'mention_list' fields
 
