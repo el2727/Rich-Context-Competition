@@ -2,7 +2,7 @@
 
 This script describes two pipelines - for classification and for document similarity.
 
-A. Classification
+A. CLASSIFICATION
 
 1. I've restructured the dataset for the classification approach, where subfolder names are dataset indices with relevant publication texts inside them (this data structure is easy to load with sklearn.datasets.load_files function). I did the restructuring with a combination of python and vba code in excel.
 
