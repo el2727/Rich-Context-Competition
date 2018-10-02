@@ -66,7 +66,6 @@ data_folder = 'sample_2/'
 all_data = load_files(data_folder)
 
 # Reference link: https://github.com/scikit-learn/scikit-learn/blob/master/doc/tutorial/text_analytics/solutions/exercise_01_language_train_model.py
-
 # 3. Creating training and test data
 # Training and test data are created using sklearn train_test_split function
 
