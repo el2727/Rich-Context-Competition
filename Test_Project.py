@@ -68,7 +68,6 @@ all_data = load_files(data_folder)
 # Reference link: https://github.com/scikit-learn/scikit-learn/blob/master/doc/tutorial/text_analytics/solutions/exercise_01_language_train_model.py
 
 # 3. Creating training and test data
-
 # Training and test data are created using sklearn train_test_split function
 
 docs_train, docs_test, y_train, y_test = train_test_split(
@@ -106,7 +105,6 @@ predicted_confidence_score = classifier_two.decision_function(docs_test)
 
 # 7. Evaluation
 
-
 accuracy_one = numpy.mean(predicted_one == y_test)
 
 print(predicted_proba)
@@ -115,9 +113,9 @@ accuracy_two = numpy.mean(predicted == y_test)
 
 print(predicted_confidence_score)
 
-B. INFORMATION RETRIEVAL (DOCUMENT RELEVANCE)
+# B. INFORMATION RETRIEVAL (DOCUMENT RELEVANCE)
 
-1. Extracting relevant fields from JSON file on datasets (name, metadata description and list of mentions)¶
+# 1. Extracting relevant fields from JSON file on datasets (name, metadata description and list of mentions)¶
 
 # Import data_sets.json file and extracting 'title', 'description' and 'mention_list' fields
 
@@ -144,13 +142,13 @@ for i in list_mention:
 
 # Reference link: https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
 
-2. Concatenating all information on datasets together
+# 2. Concatenating all information on datasets together
 
 created_list= [' '.join(i) for i in zip(list_title, list_description, list_mention_updated)]
 
 # Reference link: https://stackoverflow.com/questions/40912968/how-to-concatenate-multiple-lists-element-wise
 
-3. Creating corresponding text files for further download in Sklearn
+# 3. Creating corresponding text files for further download in Sklearn
 
 set_dataset_list = []
 for i in set_dataset:
@@ -174,12 +172,11 @@ for i in text_files:
         
 # Reference link: https://stackoverflow.com/questions/42407976/loading-multiple-text-files-from-a-folder-into-a-python-list-variable
 
-4. Creating TD-IDF representations of dataset strings and documents
+# 4. Creating TD-IDF representations of dataset strings and documents
 
 combined_list = list_text_files + all_data.data
 
-
-5. Calculating similarity
+# 5. Calculating similarity
 
 tfidf = TfidfVectorizer().fit_transform(combined_list)
 (tfidf * tfidf.T).A
