@@ -1,9 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
-
 # Importing necessary libraries
 
 from sklearn.datasets import load_files
@@ -41,18 +36,12 @@ predicted_proba_MLP = classifier_MLP.predict_proba(docs_test)[:,1]
 
 # Reference link: http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html
 
-
-# In[2]:
-
-
 from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score
 
 print(accuracy_score(y_test, predicted_MLP))
 #print(classification_report(y_test, predicted_MLP, target_names=all_data.target_names))
 
-
-# In[3]:
 
 
 # Get names of publications in the docs_test (last 83 publications, or 0.25 of test size)
@@ -82,8 +71,6 @@ for i in list_cleaned:
     list_finalized.append(i)
 
 
-# In[6]:
-
 
 # Zip lists with publications names, predicted dataset and score
 
@@ -101,9 +88,6 @@ for i in output_file:
     list_output.append(dictionary)
     
 # Reference link: https://stackoverflow.com/questions/31181830/adding-item-to-dictionary-within-loop
-
-
-# In[20]:
 
 
 # Saving output JSON file
