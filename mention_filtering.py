@@ -4,7 +4,7 @@
 # In[81]:
 
 
-# Import and pre-process a text file for tokens split by ":"
+# Import and pre-process a text file with mentions as output for string tokens split by ":"
 
 content = [i.split('\n') for i in open('1166.txt_mentions.txt')]
 content_tokenized = str(content).split(':')
