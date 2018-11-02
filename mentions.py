@@ -49,7 +49,7 @@ for i in filenames:
     filenames_list.append(y)
 
 for i, y in zip(mentions_list, filenames_list):
-    with open(y, 'w', encoding='utf-8') as output:
+    with open(y, 'w') as output:
         output.write(i)
 
 # Reference link: https://stackoverflow.com/questions/6673092/printing-out-elements-of-list-into-separate-text-files-in-python
