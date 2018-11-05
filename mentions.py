@@ -2,6 +2,9 @@
 # coding: utf8
 # Module for neuralcoref: https://github.com/huggingface/neuralcoref
 
+# A full pipeline for running a coreference resolution neural network model for mentions of other datasets and 
+# filtering the results by keywords to preserve those with the mention of datasets. Outputs a JSON format file.
+
 import spacy
 import json
 import glob
