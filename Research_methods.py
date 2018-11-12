@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[5]:
-
-
 import json
 
 # Extract research methods list from SAGE JSON file
@@ -11,20 +8,9 @@ import json
 with open('sage_research_methods.json') as file:
     data = json.load(file)
 
-# Reference link: https://linuxconfig.org/how-to-parse-data-from-json-into-python
-# Reference link: https://stackoverflow.com/questions/2835559/parsing-values-from-a-json-file
-
-
-# In[30]:
-
-
 value_list = []
 for i in data["@graph"]:
     value_list.append(i['skos:prefLabel']['@value'])
-
-
-# In[ ]:
-
 
 # Open participants' research methods file
 
